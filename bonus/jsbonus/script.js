@@ -48,7 +48,7 @@ for (let i = 0; i < team.length; i++) {
     for(let key in member){
         const td = document.createElement('td');
         if(key === 'imgName'){
-            td.innerHTML = `<img class="w-20" src="./img/${member[key]}" alt="">`;
+            td.innerHTML = `<img class="w-25" src="./img/${member[key]}" alt="">`;
         }
         else{
             td.innerHTML = member[key];

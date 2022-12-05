@@ -4,37 +4,37 @@ const team = [
         firstName: 'Wayne', 
         surname : 'Barnett',
         role : 'Founder & CEO',
-        imgName : 'wayne-barnett-founder-ceo.jpg'
+        photo : 'wayne-barnett-founder-ceo.jpg'
     },
     {
         firstName: 'Angela', 
         surname : 'Caroll',
         role : 'Chief Editor',
-        imgName : 'angela-caroll-chief-editor.jpg'
+        photo : 'angela-caroll-chief-editor.jpg'
     },
     {
         firstName: 'Walter', 
         surname : 'Gordon',
         role : 'Office Manager',
-        imgName : 'walter-gordon-office-manager.jpg'
+        photo : 'walter-gordon-office-manager.jpg'
     },
     {
         firstName: 'Angela', 
         surname : 'Lopez',
         role : 'Social Media Manager',
-        imgName : 'angela-lopez-social-media-manager.jpg'
+        photo : 'angela-lopez-social-media-manager.jpg'
     },
     {
         firstName: 'Scott', 
         surname : 'Estrada',
         role : 'Developer',
-        imgName : 'scott-estrada-developer.jpg'
+        photo : 'scott-estrada-developer.jpg'
     },
     {
         firstName: 'Barbara', 
         surname : 'Ramos',
         role : 'Graphic Designer',
-        imgName : 'barbara-ramos-graphic-designer.jpg'
+        photo : 'barbara-ramos-graphic-designer.jpg'
     }
 ];
 const tbody = document.getElementById('table-tbody');
@@ -47,7 +47,7 @@ for (let i = 0; i < team.length; i++) {
     //BONUS 1
     for(let key in member){
         const td = document.createElement('td');
-        if(key === 'imgName'){
+        if(key === 'photo'){
             td.innerHTML = `<img class="w-25" src="./img/${member[key]}" alt="">`;
         }
         else{

@@ -50,5 +50,5 @@ for (let i = 0; i < team.length; i++) {
         console.log(member[key]);
     }
     tbody.append(tr);
-    console.log('/-----------/');
+    console.log('/-----------/'); //separatore nel console.log
 }
